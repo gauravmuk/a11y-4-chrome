@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome +",
+  "description": "This plugin minimizes the number of clicks to access chrome shortcuts without remembering them.",
+  "version": "0.0.1",
+  "homepage_url": "https://gauravmuk.github.io",
+  "browser_action": {
+    "default_icon": {
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Chrome +",
+    "default_popup": "src/popup/index.html"
+  },
+  "commands": {
+    "open_extensions_page": {
+      "description": "Open Extensions Page.",
+      "suggested_key": {
+        "default": "Ctrl+Shift+E"
+      }
+    },
+    "reload_extensions": {
+      "description": "Open Extensions Page.",
+      "suggested_key": {
+        "default": "Ctrl+Shift+K"
+      }
+    }
+  },
+  "permissions": ["management"],
+  "background": {
+    "scripts": [
+      "src/js/background.js"
+    ],
+    "persistent": true
+  }
+}

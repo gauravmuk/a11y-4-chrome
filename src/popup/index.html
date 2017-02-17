@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup Page</title>
+    <style>
+        .header {
+            background: linear-gradient(-45deg, #1d4056 0%, #3c184e 100%);
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+        }
+
+        .header .title {
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        * {
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            color: #333;
+            background: #eee;
+        }
+
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        .ua-switcher {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .ua-switcher > span {
+            display: inline-block;
+            position: relative;
+            width: 70px;
+            height: 70px;
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 3px;
+            background: #fff;
+            border: #ccc 1px solid;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 0;
+            color: inherit;
+        }
+
+        .ua-switcher label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ua-switcher img {
+            display: block;
+            width: 24px;
+            margin: auto auto 10px auto;
+        }
+
+        .ua-switcher > span > label > span {
+            font-size: 8px
+        }
+    </style>
+</head>
+<body style="width: 250px; padding: 10px; background: white;">
+    <div class="header">
+        <div class="title">Chrome +</div>
+    </div>
+    <div class="content">
+        <div class="ua-switcher">
+            <span id="apps-btn">
+                <label>
+                    <img src="images/apps.png">
+                    <span>Apps</span>
+                </label>
+            </span>
+            <span id="autofill-btn">
+                <label>
+                    <img src="images/autofill.png">
+                    <span>Autofill</span>
+                </label>
+            </span>
+            <span id="clear-data-btn">
+                <label>
+                    <img src="images/clear-data.png">
+                    <span>Clear Data</span>
+                </label>
+            </span>
+            <span id="downloads-btn">
+                <label>
+                    <img src="images/downloads.png">
+                    <span>Downloads</span>
+                </label>
+            </span>
+            <span id="dino-btn">
+                <label>
+                    <img src="images/dino.png">
+                    <span>Dino</span>
+                </label>
+            </span>
+            <span id="extensions-btn">
+                <label>
+                    <img src="images/extensions.png">
+                    <span>Extensions</span>
+                </label>
+            </span>
+            <span id="history-btn">
+                <label>
+                    <img src="images/history.png">
+                    <span>History</span>
+                </label>
+            </span>
+            <span id="settings-btn">
+                <label>
+                    <img src="images/settings.png">
+                    <span>Settings</span>
+                </label>
+            </span>
+            <span id="passwords-btn">
+                <label>
+                    <img src="images/password.png">
+                    <span>Passwords</span>
+                </label>
+            </span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
